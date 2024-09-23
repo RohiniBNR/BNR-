@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion E-commerce</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container for Header and Navigation */
+        .containerHeader {
+            padding: 15px 30px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .space-between {
+            justify-content: space-between;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .left ul li {
+            margin: 0 15px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .left ul {
+            display: flex;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .search {
+            padding: 8px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .rightBox {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .profile, .wishlist, .bag {
+            margin: 0 15px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Section 1: Banner Images */
+        .section1 {
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .homeImg {
+            width: 100%;
+            max-width: 1000px;
+            margin: 10px 0;
+        }
+
+        /* Section 2: Item Grid */
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .itemImg {
+            width: 140px;
+            margin: 10px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #f8f8f8;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .left ul li {
+                margin: 0 10px;
+                font-size: 14px;
+            }
+
+            .search {
+                width: 100%;
+            }
+
+            .rightBox {
+                flex-direction: column;
+            }
+
+            .profile, .wishlist, .bag {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="containerHeader">
+        <nav class="flex space-between">
+            <div class="left flex items-center">
+                <img src="c:\Users\varsh\OneDrive\Pictures\Screenshots\Screenshot 2024-09-23 174323.png" alt="Myntra Logo" width="100">
+                <ul class="flex items-center justify-center uppercase semibold">
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>Home & Living</li>
+                    <li>Beauty</li>
+                    <li>Studio</li>
+                </ul>
+            </div>
+            <div class="right flex items-center">
+                <input class="search" type="text" placeholder="Search for products, brands and more">
+                <div class="rightBox">
+                    <div class="profile mx-2">Profile</div>
+                    <div class="wishlist mx-2">Wishlist</div>
+                    <div class="bag mx-2">Bag</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Section 1: Promotional Banners -->
+    <section class="container section1">
+        <img class="homeImg" src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/13/e34b394c-36b1-4774-8639-5aeb2c5716121652442642122-DK-TSHIRT-67--1-.gif" alt="T-shirt Offer">
+        <img class="homeImg" src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/7/1e599d37-1ed6-4e39-9057-ffb4065173b51651897264796-Unbelievable-Deals.jpg" alt="Unbelievable Deals">
+    </section>
+
+    <!-- Main Section 2: Product Grid -->
+    <section class="container section1 flex flex-wrap">
+        <img class="itemImg" src="c:\Users\varsh\OneDrive\Pictures\Screenshots\Screenshot 2024-09-23 171209.png" alt="Anouk Inddus">
+        <img class="itemImg" src=" c:\Users\varsh\OneDrive\Pictures\Screenshots\Screenshot 2024-09-23 172236.png"alt="Hrx Puma">
+        <img class="itemImg" src="c:\Users\varsh\OneDrive\Pictures\Screenshots\Screenshot 2024-09-23 172220.png" alt="All Brands">
+        <img class="itemImg" src="c:\Users\varsh\OneDrive\Pictures\Screenshots\Screenshot 2024-09-23 172154.png" alt="Hush Puppies">
+        <img class="itemImg" src="c:\Users\varsh\OneDrive\Pictures\Screenshots\Screenshot 2024-09-23 172139.png" alt="Red Tape">
+        <img class="itemImg" src="c:\Users\varsh\OneDrive\Pictures\Screenshots\Screenshot 2024-09-23 172038.png" alt="USPA Flying Machine">
+        <img class="itemImg" src="c:\Users\varsh\OneDrive\Pictures\Screenshots\Screenshot 2024-09-23 172759.png" alt="kids">
+        <img class="itemImg" src="c:\Users\varsh\OneDrive\Pictures\Screenshots\Screenshot 2024-09-23 173224.png" alt="kidsware">
+        <img class="itemImg" src="c:\Users\varsh\OneDrive\Pictures\Screenshots\Screenshot 2024-09-23 172816.png" alt="footware">
+        <img class="itemImg" src="c:\Users\varsh\OneDrive\Pictures\Screenshots\Screenshot 2024-09-23 172746.png" alt="ware">
+        <img class="itemImg" src="c:\Users\varsh\OneDrive\Pictures\Screenshots\Screenshot 2024-09-23 173235.png" alt="ware2">
+        <img class="itemImg" src="c:\Users\varsh\OneDrive\Pictures\Screenshots\Screenshot 2024-09-23 173256.png" alt="ware3">
+        <img class="itemImg" src="c:\Users\varsh\OneDrive\Pictures\Screenshots\Screenshot 2024-09-23 173309.png" alt="ware4">
+        <img class="itemImg" src="c:\Users\varsh\OneDrive\Pictures\Screenshots\Screenshot 2024-09-23 173317.png" alt="ware5">
+        <img class="itemImg" src="c:\Users\varsh\OneDrive\Pictures\Screenshots\Screenshot 2024-09-23 173833.png" alt="ware6">
+        <img class="itemImg" src="c:\Users\varsh\OneDrive\Pictures\Screenshots\Screenshot 2024-09-23 173846.png" alt="ware7">
+        <img class="itemImg" src="c:\Users\varsh\OneDrive\Pictures\Screenshots\Screenshot 2024-09-23 173818.png" alt="ware8">
+        <img class="itemImg" src="c:\Users\varsh\OneDrive\Pictures\Screenshots\Screenshot 2024-09-23 173809.png" alt="ware8">
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; myntra.com | All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
